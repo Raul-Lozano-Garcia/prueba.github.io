@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "Optimus Princeps";
+    src: url("fonts/OptimusPrinceps.ttf");
+}
+
+html,body{
+    font-family: "Optimus Princeps";
+    background:url(assets/image/fondo.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* HEADER */
+header{
+    min-height: 20vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logo img{
+    width: 500px;
+    height: 125px;
+}
+
+#menu{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+#menu ul{
+    margin: auto;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+#menu a{
+    font-size: 2rem;
+    color: white;
+}
+
+#menu a:hover,#menu a.seleccionado{
+    text-shadow: -2px -2px 3px rgb(150, 90, 57),2px -2px 3px rgb(150, 90, 57),-2px 2px 3px rgb(150, 90, 57),2px 2px 3px rgb(150, 90, 57);
+}
+
+#banner{
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#000000D0, #000000D0),url(assets/image/banner.jpg) no-repeat center center/cover;
+}
+
+#banner h1{
+ color: white;
+ font-size: 3rem;
+}
+
+#banner h2{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+#contenedor{
+    width: 80%;
+    margin: auto;
+    background-color: black;
+}
+
+#contenedor p{
+    color: white;
+    font-size: 2.5rem;
+    line-height: 160%;
+    padding:50px;
+}
+
+#contenedor .imagenFinal{
+    text-align: center;
+}
